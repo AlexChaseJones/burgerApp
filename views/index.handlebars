@@ -1,0 +1,30 @@
+<div class="row">
+	<div id="burgers" class="container col-xs-4">
+		<ol>
+			{{#each myBurgers}}
+				<form action="/devour" method="POST">
+					<li>{{this.burger_name}}</li>
+					<input type="hidden" name="id" value="{{this.id}}">
+					<input type="submit" class="btn btn-success" value="Eat it!"></input>
+				</form>
+			{{/each}}
+		</ol>
+	</div>
+	<div id="newBurger" class="container col-xs-4">
+			<form action="/add" method="POST">
+				<input name="name"></input>
+				<input type="submit" class="btn btn-info"></input>
+			</form>
+	</div>
+	<div id="devoured" class="container col-xs-4">
+		<ol>
+			{{#each devoured}}
+					<li>{{this.burger_name}}</li>
+			{{/each}}
+		</ol>
+		<form action="/purge" method="POST">
+			<input type="submit" class="btn btn-warning" value="Purge These!"></input>
+		</form>
+	</div>
+
+</div>

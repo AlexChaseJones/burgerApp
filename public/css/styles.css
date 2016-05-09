@@ -1,0 +1,74 @@
+body {
+	background-image: url('/images/backgroudynr.png');
+
+}
+
+.wrap {
+	margin: 0 auto;
+	max-width: 900px;
+	min-width: 600px;
+}
+
+#header h1 {
+	position: relative;
+	background-color: rgba(0,0,0,.6);
+	padding: 35px;
+	width: 400px;
+	margin:10px auto;
+	border-radius: 5px;
+	color: white;
+}
+
+#header img {
+	width: 230px;
+	margin-bottom: 15px;	
+}
+
+#burgers, #devoured {
+	position: relative;
+	background-color: rgba(0,0,0,.6);
+	padding: 15px;
+	padding-left: 50px;
+	margin:10px auto;
+	border-radius: 5px;
+}
+
+#burgers ol li, #devoured ol li{
+	list-style: decimal-leading-zero;
+	font-size: 1.5em;
+	color: white;
+}
+
+#newBurger form input:first-child {
+	width: 100%;
+	height: 45px;
+	font-size: 1.3em;
+	text-align: center;
+	background-color: rgba(255,255,255,.8);
+	border-radius: 10px;
+}
+
+#newBurger form input:last-child {
+	margin: 10px;
+	height: 55px;
+	width: 120px;
+	font-size: 1.2em;
+	border-radius: 30px;
+	text-transform: uppercase;
+}
+
+#newBurger {
+	text-align: center;
+}
+
+#burgers form input:last-child, #devoured form input:last-child {
+	height: 35px;
+	width: 140px;
+}
+
+
+
+
+
+
+
