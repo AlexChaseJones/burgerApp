@@ -29,7 +29,7 @@ app.engine('handlebars', exphbs({
 app.set('view engine', 'handlebars');
 
 app.use('/', routes);
-var PORT = process.env.port || 9000;
+var PORT = process.env.PORT || 9000;
 
 app.listen(PORT, function(){
 	console.log('App listening on PORT ' + PORT);
