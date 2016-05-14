@@ -1,7 +1,7 @@
 //Database Connection
 //============================================================
 var mysql = require('mysql');
-
+var connection;
 // var connection = mysql.createConnection({
 // 	host	: 'localhost',
 // 	user	: 'root',
@@ -25,7 +25,7 @@ if (process.env.JAWSDB_URL) {
 		user	: 'root',
 		password: '',
 		database: 'burgers_db'
-	})	
+	});
 }
 
 //Create the model and define the schema using Sequelize
